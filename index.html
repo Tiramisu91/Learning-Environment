@@ -6,15 +6,19 @@
 <head>
   <meta charset="utf-8">
   <title>Learning Environment</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 
 <body>
 
-  <h1>exercice-markdown</h1>
+  <h1>Exercice-Markdown</h1>
 
-<h2>Exercice markdown et github en collaboration</h2>
+    <h2>Exercice markdown et github en collaboration</h2>
 
+>
 <h3>Les Titres</h3>
+
 
 <p>
 
@@ -25,17 +29,22 @@ deux dièse pour un titre h2 etc...</p>
 
 <h4> Exemple :</h4>
 
-````
-# titre1
-## titre2
-### titre3
-````
+<div class="titre">
+  <ul>
+    <li># titre1</li>
+    <li>## titre2</li>
+    <li>### titre3</li>
+  </ul>
+</div>
+
 
 <h4> Resultat : </h4>
 
+<div class="résultat">
 <h1> titre1</h1>
 <h2> titre2</h2>
 <h3> titre3</h3>
+</div>
 
 
 <h3> Les Paragraphes </h3>
@@ -48,16 +57,22 @@ deux effets précédents. </p>
 
 <h4> Exemple :</h4>
 
-````
-*mon texte italique*
-**mont texte gras**
-***mon texte italique et gras***
-````
+<div class="résultat">
+  <ul>
+    <li>*mon texte italique*</li>
+    <li>**mont texte gras**</li>
+    <li>***mon texte italique et gras***</li>
+  </ul>
+</div>
 
 <h4> Resultat : </h4>
-*texte*
-**texte**
-***texte***
+<div class="résultat">
+  <ul>
+    <li><em>texte</em></li>
+    <li><strong>texte</strong></li>
+    <li><strong><em>texte</em></strong></li>
+  </ul>
+</div>
 
 <h1> Les différentes listes </h1>
 <p>
@@ -70,81 +85,89 @@ Nous commencerons par expliquer comment les ajouter de manière très simple sui
 <p>Lorsque vous avez plusieurs élément à afficher dans une liste non-ordonnée (sans numérotation),
 il vous suffi de commencer chaque ligne de code par une * suivis d'un espace puis de l'élément à lister.</p>
 
-Par exemple:
-* Belgique
-* Allemagne
-* France
-* . . .
+<p>Par exemple:</p>
 
-Comment y arriver ?
-````
-* Belgique
-* Allemagne
-* France
-* . . .
-````
+<div class="résultat">
+  <ul>
+    <li> Belgique</li>
+    <li> Allemagne</li>
+    <li> France </li>
+    <li> . . . </li>
+  </ul>
+</div>
 
-## 2. La liste numérique:
+<p> Comment y arriver ? </p>
 
-Imaginons que, suite à une compétition, vous avez un classement à afficher. C'est dans cette rubrique que vous trouverez la manière d'y parvenir.
+<div class="résultat">
+  <ul>
+    <li>* Belgique</li>
+    <li>* Allemagne</li>
+    <li>* France</li>
+    <li>* . . .</li>
+</div
+
+<h2> 2. La liste numérique: </h2>
+
+<p>Imaginons que, suite à une compétition, vous avez un classement à afficher. C'est dans cette rubrique que vous trouverez la manière d'y parvenir.
 Il vous suffira de commencer la liste par un 1. suivis d'un espace puis de l'élément à placer en 1er.
-Ce qui diffère de la liste à puces, c'est qu'il faudra commencer les lignes suivantes par 2. , 3. , etc..
+Ce qui diffère de la liste à puces, c'est qu'il faudra commencer les lignes suivantes par 2. , 3. , etc..</p>
 
-Par exemle:
-1. Belgique
-2. Allemagne
-3. France
+<p> Par exemle: </p>
 
-Voici comment faire:
-````
-1. Belgique
-2. Allemagne
-3. France
-````
+<div class="résultat">
+  <ol>
+    <li>Belgique</li>
+    <li>Allemagne</li>
+    <li>France</li>
+  </ol>
+</div>
 
-## 3. La liste imbriquées:
+<h2> 3. La liste imbriquées: </h2>
 
-Il est aussi possible d'imbriquer une liste dans une autre lorsque vous avez besoin d'afficher des sous-éléments.
+<p>Il est aussi possible d'imbriquer une liste dans une autre lorsque vous avez besoin d'afficher des sous-éléments.</p>
 
-###### Liste à puces:
-* Belgique
-  * Bruxelles
-* Allemagne
-  * Berlin
-* France
-  * Paris
+<h4> Liste à puces : </h4>
 
-###### Liste numérique:
-1. Belgique
-    1. Bruxelles
-    2. Anvers
-2. Allemagne
-    1. Berlin
-3. France
-    1. Paris
+<div class="résultat">
+  <ul>
+    <li> Belgique</li>
+      <ul><li> Bruxelles</li></ul>
+    <li> Allemagne</li>
+      <ul><li> Berlin</li></ul>
+    <li>France</li>
+      <ul><li>Paris</li></ul>
+  </ul>
+</div>
 
-Pour avoir le même résultat, il faudra simplement créer un tabulation (appuyez sur la touche Tab de votre claier) puis procéder de la même façon que sur les exemples précédents.
-````
-* Belgique
-  * Bruxelles
-* Allemagne
-  * Berlin
-* France
-  * Paris
-````
-PS: pour la liste numérique imbriquée, il vous faudra commencer par 4 espaces avant d'énumérer vos éléments.
+<h4> Liste numérique:</h4>
 
-# Comment insérer un lien ou une image en MarkDown ?
+<div class="résultat">
+  <ol>
+    <li>Belgique</li>
+      <ol><li>Bruxelles</li>
+          <li>Anvers</li></ol>
+    <li> Allemagne</li>
+      <ol><li> Berlin</li></ol>
+    <li>France</li>
+      <ol><li>Paris</li></ol>
+  </ol>
+</div>
 
-## Liens
+<p>Pour avoir le même résultat, il faudra simplement créer un tabulation (appuyez sur la touche Tab de votre claier) puis procéder de la même façon que sur les exemples précédents.
+</p>
 
-Contrairement au Html où l'utilisation de balises était nécessaire, en MarkDown, il suffit de *placer le texte du lien entre crochets suivis de l'URL entre parenthèses*. Voyons comment cela fonctionne en pratique, avec la page d'OpenClassRooms qui est notre principale source d'inspiration. Je tape le texte "OpenClassRooms" entre [] et j'insère le lien entre parenthèses juste après : `[texte](Lien)`. Exemple : [OpenClassRooms](https://openclassrooms.com/courses/redigez-en-markdown).
+<p>PS: pour la liste numérique imbriquée, il vous faudra commencer par 4 espaces avant d'énumérer vos éléments.
+</p>
+<h1> Comment insérer un lien ou une image en MarkDown ? </h1>
 
-## Images
+<h2> Liens </h2>
 
-Pour ce qui est des images, le principe est le même, à la seule différence qu'il faut rajouter un point d'exclamations juste avant les crochets : `![texte alternatif](lien de l'image)`. Pour l'exemple, après de longues discussions, il a été décidé d'utiliser le Pingouin Ninja : ![Pingouin Ninja](https://www.spreadshirt.be/image-server/v1/mp/designs/14527900,width=178,height=178/pingouin-ninja.png)
+Contrairement au Html où l'utilisation de balises était nécessaire, en MarkDown, il suffit de placer le texte du lien entre crochets suivis de l'URL entre parenthèses. Voyons comment cela fonctionne en pratique, avec la page d'OpenClassRooms qui est notre principale source d'inspiration. Je tape le texte "OpenClassRooms" entre [] et j'insère le lien entre parenthèses juste après : <span>[texte](Lien)</span>. <a href="https://openclassrooms.com/courses/redigez-en-markdown">Open ClassRooms</a>
 
-## Images animées
+<h2> Images </h2>
 
-Afin de vous exprimer notre gratitude, notre dino-dabeur tenait à vous faire une démonstration des images animées en MarkDown, à nouveau le principe est exactement le même que pour les images normales : ![dinosaure](https://media.giphy.com/media/l3zoKeX8bMG5sMP4s/giphy.gif)
+Pour ce qui est des images, le principe est le même, à la seule différence qu'il faut rajouter un point d'exclamations juste avant les crochets : `![texte alternatif](lien de l'image)`. Pour l'exemple, après de longues discussions, il a été décidé d'utiliser le Pingouin Ninja : <img src="https://www.spreadshirt.be/image-server/v1/mp/designs/14527900,width=178,height=178/pingouin-ninja.png"/>
 
+<h2> Images animées </h2>
+
+Afin de vous exprimer notre gratitude, notre dino-dabeur tenait à vous faire une démonstration des images animées en MarkDown, à nouveau le principe est exactement le même que pour les images normales : <img src ="https://media.giphy.com/media/l3zoKeX8bMG5sMP4s/giphy.gif"/>
