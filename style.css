@@ -7,3 +7,18 @@ div.résultat {
 span {
   background: silver;
 }
+
+body {
+
+  background-image: url("https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "comic sans ms";
+  color: white;
+}
+
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
